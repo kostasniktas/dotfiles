@@ -1,0 +1,6 @@
+colorscheme murphy
+
+winpos 2500 50
+set lines=75
+set columns=125
+

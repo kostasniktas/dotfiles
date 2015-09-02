@@ -1,0 +1,31 @@
+
+set hls
+set incsearch
+set autoindent
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set number
+set showmatch
+set hidden
+
+nnoremap ; :
+
+nmap <silent> ,/ :let @/=""<CR>
+
+
+fu! OnEditFile()
+  syn match EvilSpace "[ \t]\+$" containedin=ALL
+  hi link EvilSpace Error
+  syn match EvilSpace2 "\t" containedin=ALL
+  hi link EvilSpace2 Error
+endf
+
+au BufNewFile,BufRead   *                      silent call OnEditFile()
+au BufNewFile,BufRead   *.ant.log              set filetype=antlog
+au BufNewFile,BufRead   build.xml              set filetype=ant
+au BufNewFile,BufRead   multi-project.xml              set filetype=ant
+au! Syntax antlog source $HOME/.vim/syntax/antlog.vim
+au BufNewFile,BufRead *.gradle setf groovy
+
