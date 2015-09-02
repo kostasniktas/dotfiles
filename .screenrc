@@ -1,0 +1,10 @@
+caption always '%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw'
+hardstatus alwayslastline "%{= kW} %-= %{= kB}Session:%u%{= kW} %5` | %{= kB}Host:%{= kW} %H | %1` |%{= kB} MEM:%{= kW} %2`MB /%{= kB} SW: %{= kW}%3`MB | %4` %{= kR}Unread %{= kW}| %m/%d/%y %c"
+hardstatus alwayslastline "%H   %-= %m/%d/%y %c"
+startup_message off
+defscrollback 5000
+shell zsh
+chdir ~/
+
+
+

@@ -1,0 +1,19 @@
+#caption always '%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw'
+#hardstatus alwayslastline "%-= %m/%d/%y %c"
+
+#hardstatus alwayslastline "%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw %-= %{= kY} %H %{= kW} %m/%d/%y %c"
+
+startup_message off
+shell zsh
+defscrollback 5000
+
+
+chdir ~/
+screen -t "htop" 0 htop
+
+screen -t "gerrit" 1 /home/kniktas/scripts/gerritWatch
+
+screen -t "saidar" 2 saidar
+
+select "htop"
+

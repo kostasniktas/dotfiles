@@ -1,0 +1,13 @@
+#caption always '%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw'
+startup_message off
+defscrollback 5000
+chdir ~/
+#screen -t "Finch" 0 finch
+#split -v
+#focus
+screen -t "IRC" 0  irssi
+focus
+
+select "IRC"
+
+

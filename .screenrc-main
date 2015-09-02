@@ -1,0 +1,24 @@
+#caption always '%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw'
+#hardstatus alwayslastline "%-= %m/%d/%y %c"
+
+hardstatus alwayslastline "%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw %-= %{= kY} %H %{= kW} %m/%d/%y %c"
+
+startup_message off
+shell zsh
+defscrollback 5000
+
+
+chdir ~/
+screen -t "shell" 0 zsh
+
+screen -t "todo" 1 vim -S todo.vim
+
+chdir ~/githh
+screen -t "hh" 2 zsh
+
+
+chdir ~/
+
+screen -t "irc" 10 zsh
+
+select "shell"
