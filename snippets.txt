@@ -1,0 +1,2 @@
+wget -np -nH --cut-dirs=1 -e robots=off --accept *.tar.gz,*.msi,*.pkg --reject docs/*,x64,*.html -U "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:30.0) Gecko/20100101 Firefox/30.0" -r --no-parent http://nodejs.org/dist/v0.10.36/
+
