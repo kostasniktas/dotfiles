@@ -1,0 +1,20 @@
+caption always '%{= kB}%-Lw%?%{r}[%{G}%n*%f %t%?%{r}]%{= kB}%+Lw'
+#hardstatus alwayslastline "%{= kW} %-= %{= kB}Session:%u%{= kW} %5` | %{= kB}Host:%{= kW} %H | %1` |%{= kB} MEM:%{= kW} %2`MB /%{= kB} SW: %{= kW}%3`MB | %4` %{= kR}Unread %{= kW}| %m/%d/%y %c"
+
+# Battery
+#backtick 1 0 30 /Users/kniktas/scripts/battery_percentage.sh high
+#backtick 2 0 30 /Users/kniktas/scripts/battery_percentage.sh medium
+#backtick 3 0 30 /Users/kniktas/scripts/battery_percentage.sh low
+#backtick 4 0 30 /Users/kniktas/scripts/battery_percentage.sh critical lines
+#backtick 5 0 15 /Users/kniktas/scripts/battery_charging.sh abbrev
+#backtick 6 0 30 rainbarf --width 0 --remaining --bright --screen
+
+#hardstatus alwayslastline "%H   %-= %?%5`  [%?%{+b dg}%1`%{-}%?%{+b dy}%2`%{-}%?%{+b dr}%3`%{-}%?%{+Bb dR}%4`%{-}]  |  %m/%d/%y %c"
+hardstatus alwayslastline "%H   %-=  %m/%d/%y %c"
+startup_message off
+defscrollback 8000
+#shell zsh
+#chdir ~/
+
+
+
