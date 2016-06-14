@@ -1,0 +1,3 @@
+[alias]
+  remotes = remote -v
+  tree = log --graph --decorate
