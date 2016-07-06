@@ -1,0 +1,3 @@
+[include]
+  path = /Users/kniktas/git/dotfiles/gitconfig-aliases
+  path = /Users/kniktas/git/dotfiles/gitconfig-options
