@@ -1,5 +1,6 @@
 [alias]
-  remotes = remote -v
-  tree = log --graph --decorate
   fetchap = fetch --all --prune
+  remotes = remote -v
+  st = status --short
+  tree = log --graph --decorate
   upstreampdate = pull upstream master

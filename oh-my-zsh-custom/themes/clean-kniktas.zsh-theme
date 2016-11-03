@@ -2,7 +2,8 @@ if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
 local smileyexit="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}ಠ_ಠ%{$reset_color%}) "
 PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%~%b%{$reset_color%} $(git_prompt_info)%(!.#.$) ${smileyexit} '
-RPROMPT='[%*]'
+#RPROMPT='[%*]'
+RPROMPT=''
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
