@@ -4,3 +4,5 @@
   st = status --short
   tree = log --graph --decorate
   upstreampdate = pull upstream master
+  prdiff = diff upstream/master..HEAD
+  prlog = log upstream/master..HEAD
