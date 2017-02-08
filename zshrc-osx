@@ -51,7 +51,7 @@ plugins=(brew git screen osx vagrant aws heroku)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home
 export JAVA_HOME
 
 export PATH=$HOME/bin:$HOME/scripts:/usr/local/bin:$JAVA_HOME/bin:$PATH
