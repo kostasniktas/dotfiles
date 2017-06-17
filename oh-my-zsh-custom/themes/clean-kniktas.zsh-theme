@@ -1,7 +1,14 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
 local smileyexit="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}ಠ_ಠ%{$reset_color%}) "
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%~%b%{$reset_color%} $(git_prompt_info)%(!.#.$) ${smileyexit} '
+
+PROMPT='' # reset
+PROMPT+='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}' # user
+PROMPT+=':' # :
+PROMPT+='%{$fg[blue]%}%B%~%b%{$reset_color%}' # path
+PROMPT+=' ' # space
+PROMPT+='$(git_prompt_info)' # git
+PROMPT+='%(!.#.$) ${smileyexit} ${RESET}' # $ and smiley
 #RPROMPT='[%*]'
 RPROMPT=''
 
