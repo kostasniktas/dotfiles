@@ -10,7 +10,7 @@ PROMPT+=' ' # space
 PROMPT+='$(git_prompt_info)' # git
 PROMPT+='%(!.#.$) ${smileyexit} ${RESET}' # $ and smiley
 #RPROMPT='[%*]'
-RPROMPT=''
+#RPROMPT=''
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
