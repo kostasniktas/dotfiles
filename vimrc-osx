@@ -8,12 +8,21 @@ set shiftwidth=2
 set backspace=indent,eol,start
 set expandtab
 set number
+set relativenumber
 set showmatch
 set hidden
 
 nnoremap ; :
 
 nmap <silent> ,/ :let @/=""<CR>
+
+" Paste mode
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+" Relative numbers
+nnoremap <F3> :set invrelativenumber relativenumber?<CR>
 
 fu! OnEditFile()
   syn match EvilSpace "[ \t]\+$" containedin=ALL

@@ -15,6 +15,14 @@ nnoremap ; :
 nmap <silent> ,/ :let @/=""<CR>
 
 
+" Paste mode
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+" Relative numbers
+nnoremap <F3> :set invrelativenumber relativenumber?<CR>
+
 fu! OnEditFile()
   syn match EvilSpace "[ \t]\+$" containedin=ALL
   hi link EvilSpace Error
