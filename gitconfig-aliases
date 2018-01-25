@@ -1,5 +1,6 @@
 [alias]
   commitmvim = "!GIT_EDITOR='mvim -f' git commit &"
+  commitsummary = shortlog -s -n --all
   fetchap = fetch --all --prune
   remotes = remote -v
   st = status --short
