@@ -1,6 +1,15 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
-local smileyexit="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}ಠ_ಠ%{$reset_color%}) "
+local smileyemoji=1
+
+if [ $smileyemoji -eq 1 ]; then
+  local smileyhappy="😃"
+  local smileysad="💩"
+else
+  local smileyhappy="☺"
+  local smileysad="ಠ_ಠ"
+fi
+local smileyexit="%(?,%{$fg[green]%}$smileyhappy%{$reset_color%},%{$fg[red]%}$smileysad%{$reset_color%}) "
 
 PROMPT='' # reset
 PROMPT+='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}' # user
