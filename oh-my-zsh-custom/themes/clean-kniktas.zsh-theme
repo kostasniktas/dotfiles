@@ -1,6 +1,6 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
-local smileyemoji=1
+local smileyemoji=0
 
 if [ $smileyemoji -eq 1 ]; then
   local smileyhappy="😃"
