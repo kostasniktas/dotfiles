@@ -5,6 +5,7 @@
   remotes = remote -v
   st = status --short
   tree = log --graph --decorate
+  ll = log --graph --oneline --decorate
   upstreampdate = pull upstream master
   prdiff = diff upstream/master..HEAD
   prlog = log upstream/master..HEAD
