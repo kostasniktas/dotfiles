@@ -9,3 +9,5 @@
   upstreampdate = pull upstream master
   prdiff = diff upstream/master..HEAD
   prlog = log upstream/master..HEAD
+  prfetch-github = "!f() { git fetch $1 pull/$2/head:PR_$1_$2; }; f"
+
