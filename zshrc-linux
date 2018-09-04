@@ -78,6 +78,7 @@ alias ssh='ssh -Y'
 alias cdPlay='cd otherbuilds playground'
 alias cdOther='cd playground otherbuilds'
 alias grep='grep --color'
+alias holdmybeer='sudo'
 
 #%{\033[34m%}
 #%{\033[0m%}
