@@ -11,4 +11,3 @@
   prdiff = "!f() { REMOTE="upstream"; [ -z "$(git remote | grep "^upstream$")" ] && REMOTE="origin"; git diff $REMOTE/master..HEAD; }; f"
   prlog = log upstream/master..HEAD
   prfetch-github = "!f() { git fetch $1 pull/$2/head:PR_$1_$2; }; f"
-  prdiffold = diff upstream/master..HEAD
