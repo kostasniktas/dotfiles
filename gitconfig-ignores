@@ -5,6 +5,7 @@
 *.pyc
 
 # OSX
+.DS_Store
 
 # Windows
 
