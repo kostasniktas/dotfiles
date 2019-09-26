@@ -8,6 +8,7 @@
   ll = log --graph --oneline --decorate
   upstreampdate = pull upstream master
   olddiff = !git --no-pager diff
-  prdiff = "!f() { REMOTE="upstream"; [ -z "$(git remote | grep "^upstream$")" ] && REMOTE="origin"; git diff $REMOTE/master..HEAD; }; f"
+  prdiff = "!f() { REMOTE="upstream"; [ -z "$(git remote | grep "^upstream$")" ] && REMOTE="origin"; git diff $REMOTE/${BRANCH:-master}..HEAD; }; f"
   prlog = log upstream/master..HEAD
   prfetch-github = "!f() { git fetch $1 pull/$2/head:PR_$1_$2; }; f"
+  tagsort = !git tag | sort -V
